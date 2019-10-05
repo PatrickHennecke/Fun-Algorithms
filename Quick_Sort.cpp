@@ -1,14 +1,24 @@
+// Quick_Sort.cpp
+
 #include<iostream>
 #include<vector>
+#include<cstlib>
 
 
-void Partition2() {
-
-
-
+int Partition2(vector<int> a, int l, int r) {
+  int x = a[l];
+  int j =l;
+  for (int i = l+1; i <=r; i++) {
+      if(a[i] <= x) {
+        j++;
+        swap(a[i],a[j]);
+      }
+  }
+  swap(a[l],a[j]);
+  return j;
 }
 
-void RandomizedQuickSort(int n, vector<int> a) {
+void RandomizedQuickSort(vector<int> a, int l, int r) {
 
   int m = rand() % (a.size());
   
