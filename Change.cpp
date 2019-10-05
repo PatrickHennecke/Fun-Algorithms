@@ -1,4 +1,4 @@
-// Change.cpp 
+// Change.cpp using greedy algorithm
 
 /* Given an input, n (user input), display the amount of coins they get in change. 
 For this problem coin denominations are simplified to 1, 5 and 10, 
